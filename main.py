@@ -95,7 +95,6 @@ async def cmd_all(message: types.Message):
     # Отправляем сообщение всем пользователям
     for user_id in users:
         await bot.send_message(chat_id=user_id, text=message.text[4:])
-print("here")
 
 @dp.message_handler(commands=['write'])
 async def cmd_write(message: types.Message):
